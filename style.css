@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color:rgb(29, 29, 29);
+}
+
+.Contact {
+    min-height: 100vh;
+    width: 80%;
+    padding: 50px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content {
+    max-width: 800px;
+    margin-left: 270px;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.me{
+    letter-spacing: 1px;
+    color: #2F80ED;
+    margin-bottom: 1.2rem;
+    font-size: 3rem;
+    position: relative;
+    font-family: 'Pacifico', cursive;
+}
+
+.Contact form {
+    margin-top: -100px;
+    margin-left: 280px;
+    width: 100%;
+    padding: 40px;
+    height: auto;
+    background-color: black;
+}
+
+.Contact form h2 {
+    text-align: center;
+    font-size: 30px;
+    color:rgb(33, 51, 90);
+    font-weight: 500;
+    font-family: 'Pacifico', cursive;
+}
+
+.inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.Contact form .inputbox input {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px white;
+    outline: none;
+    resize: none;
+
+}
+
+.Contact form .inputbox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px white;
+    outline: none;
+    resize: none;
+
+}
+
+.Contact form .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: teal;
+    font-family: 'Pacifico', cursive;
+}
+
+.Contact form .inputbox input :focus~span {
+    color: gray;
+    font-size: 12px;
+    transform: translate(-20px);
+}
+
+.Contact form .inputbox input :valid~span {
+    color: white;
+    font-size: 12px;
+    transform: translate(-20px);
+}
+
+.Contact form .inputbox textarea :focus~span {
+    color: gray;
+    font-size: 12px;
+    transform: translate(-20px);
+}
+
+.Contact form .inputbox textarea :valid~span {
+    color: gray;
+    font-size: 12px;
+    transform: translate(-20px);
+}
+
+.inputbox input[type="submit"] {
+    width: 100px;
+    background: grey;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+@media (max-width:991px) {
+    .Contact {
+        padding: 50px;
+    }
+
+    .Contact form {
+        width: 100%;
+    }
+
+}
