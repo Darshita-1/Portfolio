@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color:rgb(29, 29, 29);
+    background-color:black;
 }
 
 .Contact {
@@ -29,28 +29,30 @@ body {
 
 .me{
     letter-spacing: 1px;
-    color: #2F80ED;
+    color:rgb(80, 122, 212);
     margin-bottom: 1.2rem;
     font-size: 3rem;
     position: relative;
     font-family: 'Pacifico', cursive;
+    padding-bottom: 4rem;
 }
 
 .Contact form {
     margin-top: -100px;
     margin-left: 280px;
     width: 100%;
-    padding: 40px;
+    padding: 30px;
     height: auto;
-    background-color: black;
+    background-color:rgb(29, 29, 29);
 }
 
-.Contact form h2 {
+.send {
     text-align: center;
     font-size: 30px;
-    color:rgb(33, 51, 90);
+    color:white;
     font-weight: 500;
     font-family: 'Pacifico', cursive;
+    padding: 2rem;
 }
 
 .inputbox {
@@ -59,70 +61,58 @@ body {
     margin-top: 10px;
 }
 
-.Contact form .inputbox input {
+.Input {
     width: 100%;
     padding: 5px 0;
     font-size: 16px;
     margin: 10px 0;
     border: none;
-    border-bottom: 2px white;
     outline: none;
     resize: none;
-
-}
-
-.Contact form .inputbox textarea {
-    width: 100%;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    border: none;
-    border-bottom: 2px white;
-    outline: none;
-    resize: none;
-
-}
-
-.Contact form .inputbox span {
-    position: absolute;
-    left: 0;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    pointer-events: none;
-    transition: 0.5s;
-    color: teal;
+    border-radius: 2rem;
     font-family: 'Pacifico', cursive;
+    background: rgb(0, 0, 43);
+
 }
 
-.Contact form .inputbox input :focus~span {
-    color: gray;
+.AInput {
+    width: 100%;
+    padding: 40px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    resize: none;
+    border-radius: 2rem;
+    font-family: 'Pacifico', cursive;
+    background:rgb(0, 0, 43);
+}
+
+.Input :focus~placeholder {
     font-size: 12px;
     transform: translate(-20px);
 }
 
-.Contact form .inputbox input :valid~span {
+.Input :valid~placeholder{
+    color: white;
+    font-size: 12px;
+    transform: translate(-20px);
+}
+.AInput :focus~placeholder {
+    font-size: 12px;
+    transform: translate(-20px);
+}
+
+.AInput :valid~placeholder{
     color: white;
     font-size: 12px;
     transform: translate(-20px);
 }
 
-.Contact form .inputbox textarea :focus~span {
-    color: gray;
-    font-size: 12px;
-    transform: translate(-20px);
-}
-
-.Contact form .inputbox textarea :valid~span {
-    color: gray;
-    font-size: 12px;
-    transform: translate(-20px);
-}
-
-.inputbox input[type="submit"] {
+.Input[type="submit"] {
     width: 100px;
-    background: grey;
-    color: black;
+    background: rgb(0, 0, 43);
+    color:gray;
     border: none;
     cursor: pointer;
     padding: 10px;
